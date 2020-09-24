@@ -15,6 +15,8 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+// const MONGODB_URI = mongodb+srv://adgrossm-admin:<password>@cluster0.zwkfy.mongodb.net/workout?retryWrites=true&w=majority;
+
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", 
 { 
   useNewUrlParser: true,
@@ -23,6 +25,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout",
     useFindAndModify: false
 
  });
+
 
 require("./controller/html-routes")(app);
 require("./controller/api-routes")(app);
