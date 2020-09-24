@@ -1,7 +1,7 @@
 
 # Fitness Tracker
 
-<img src="../public/images/screenshot.JPG" alt="image of employee tracker working in node.js" >
+<img src="./public/images/screenshot.JPG" alt="screenshot of fitness tracker" >
 
 ![License](https://img.shields.io/badge/License-MIT-blue.svg "License Badge")
 
